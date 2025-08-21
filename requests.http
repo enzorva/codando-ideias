@@ -1,0 +1,25 @@
+GET http://localhost:8080/post
+
+GET http://localhost:8080/post/12
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "author": "Paulo 2",
+  "title": "Segundo Post",
+  "post_content": "Conteúdo do segundo post.",
+  "key_word": "teste2"
+}
+
+PUT http://localhost:8080/post/12
+Content-Type: application/json
+
+{
+  "author": "Paulo Sérgio",
+  "title": "Primeiro Post Editado",
+  "post_content": "Conteúdo atualizado do primeiro post.",
+  "key_word": "teste2"
+}
+
+DELETE http://localhost:8080/post/11
